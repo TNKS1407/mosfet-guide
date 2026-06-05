@@ -6,6 +6,12 @@
 <title>MOSFETの選定と使用設計ガイド - 熱・損失・ゲート駆動・パルス動作を実務で引ける技術文書</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<style>
+.katex-display{margin:1rem 0;overflow-x:auto;overflow-y:hidden;padding:0.2rem 0;}
+.katex{font-size:1.04em;}
+p:has(> .katex-display){margin:0;}
+</style>
 <style>
 :root{--bg:#f5f2ec;--surface:#faf8f4;--surface2:#f0ece6;--border:#e3dbd0;--accent:#3c7876;--accent2:#5a9e9b;--accent3:#8c6d4f;--text:#1d1b17;--text-muted:#7d7568;}
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -4390,5 +4396,20 @@ $$</p>
 [31] Toshiba Electronic Devices &amp; Storage, <em>Power MOSFET Electrical Characteristics</em>.<br />
 [32] ROHM TechWeb, <em>MOSFET Parasitic Capacitance and Its Temperature Characteristics</em>.  </p></article>
 </div>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  renderMathInElement(document.body, {
+    delimiters: [
+      { left: '$$', right: '$$', display: true },
+      { left: '$',  right: '$',  display: false }
+    ],
+    throwOnError: false,
+    ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  });
+});
+</script>
 </body>
+</html>
 </html>
